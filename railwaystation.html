@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner</title>
+    <!-- style sheet linking in html  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- bootstrap cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome cdnjs link   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <section class="banner" style="background:url(./assets/img/railway.jpg) !important ; background-position: right center;">
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/img/logo.png" alt="Logo here">
+            </div>
+            <div class="content__container">
+                <div class="headein">
+                    <h1 class="text-dark">Railway transfers made surprisingly easy and enjoyable!</h1>
+                </div>
+            </div>
+            <div class="form">
+                <div class="form__link">
+                  <div class="row">
+                    <div class="col-4 form__link__item"><a href="./" ><i class="fa-solid fa-plane-departure mx-3"></i> Airport</a></div>
+                    <div class="col-4 form__link__item"><a href="./railwaystation.html" class="active"> <i class="fa-solid fa-train mx-3"></i> Railway Stn</a></div>
+                    <div class="col-4 form__link__item"><a href="./outstation.html"><i class="fa-solid fa-car mx-3"></i>Outstation</a></div>
+                  </div>
+                </div>
+                <div class="form__data p-3">
+                  <form action="">
+                    <div class="row pt-4">
+                      <div class="col-lg-5 col-md-5 col-sm-12 form__item__div mb-sm-2">
+                        <div class="form__item__1">
+                          <input type="text" class="form-control shadow-none border-0" placeholder="Station,Hotel,address">
+                          <label for="pick" class="Label__1">Pickup</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 col-md-5 col-sm-12 form__item__div mb-sm-2">
+                        <div class="form__item__1">
+                          <input type="text" class="form-control shadow-none border-0" placeholder="Station,Hotel,address">
+                          <label for="pick" class="Label__1">Drop-Off</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-2 col-sm-12 form__item__div mb-sm-2">
+                        <div class="form__item__1">
+                         <select name="" id="" class="form-control shadow-none border-0">
+                          <option value="passenger" selected>Passenger</option>
+                          <option value="1" >1</option>
+                          <option value="2" >2</option>
+                          <option value="3" >3</option>
+                          <option value="4" >4</option>
+                          <option value="5" >5</option>
+                         </select>
+                          <label for="pick" class="Label__1"><i class="fa-regular fa-user"></i></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row py-lg-4">
+                      <div class="col-lg-5 col-md-5 col-sm-12 form__item__div d-flex px=5">
+                        <div class="col-6">
+                          <div class="form__item__1">
+                            <input type="date" class="form-control shadow-none border-0" placeholder="03/15/2022">
+                            <label for="pick" class="Label__1"><i class="fa-sharp fa-solid fa-calendar-days"></i></label>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="form__item__1">
+                            <input type="time" class="form-control shadow-none border-0" placeholder="Airport,Hotel,address">
+                            <label for="pick" class="Label__1"><i class="fa-regular fa-clock"></i></label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 col-md-5 form__item__div col-sm-12">
+                        <button class="w-100 h-100 d-flex align-items-center justify-content-center">Add Return</button>
+                      </div>
+                      <div class="col-lg-2 col-md-2 col-sm-12 form__item__div d-flex align-items-center">
+                        <input type="submit" class="form-control border-0 sub__btn" value="Search">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- script bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

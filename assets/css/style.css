@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+
+h1 {
+    font-size: 3.625rem;
+    line-height: 1.17241;
+    letter-spacing: -1.5px;
+}
+
+.banner {
+    width: 100%;
+    height: 120vh;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/banner.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner .logo {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 0px 00px 10px 10px;
+    background-color: #fff;
+}
+
+.banner .content__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.banner .content__container h1 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    max-width: 68%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    color: #fff;
+}
+
+.form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.form__link__item a {
+    width: 100%;
+    color: #fff;
+    height: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .6);
+    height: 50px;
+    transition: .3s ease-in-out;
+}
+
+.form__link__item a.active,
+.form__link__item a:hover {
+    background-color: #fff;
+    color: #000;
+
+}
+
+.form__link .row {
+    --bs-gutter-x: 0rem !important;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+.form__data {
+    background: #fff;
+}
+
+.form__item__1 {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 60px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.form__item__1 .Label__1 {
+    position: absolute;
+    top: -18px;
+    background-color: #fff;
+    padding: 5px 10px;
+    left: 5px;
+    font-size: 18px;
+}
+
+button {
+    border: 2px solid gray !important;
+    background: #fff;
+    border-radius: 10px !important;
+}
+
+.sub__btn {
+    height: 100%;
+    background-color: #202C62 !important;
+    color: #fff !important;
+}
+
+.input__box {
+    border: 2px solid gray;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.label {
+    font-size: 16px;
+}
+
+.form__out {
+    width: 95%;
+    margin: 0 auto !important;
+}
+
+.label__return{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.label__return input {
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+#id {
+    display: none;
+}
+
+.imputbox{
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 2px 10px;
+    height: 100%;
+}
+
+.icon__box{
+    gap: 10px;
+}
+
+.sub_btn{
+    background: #202C62 !important;
+    color: #FFF !important;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    .form__item__div{
+        margin-bottom: 30px;
+    }
+
+    .banner {
+        height: 100vh;
+    }
+    
+}
+
+@media (max-width:786px) {
+
+    .banner .content__container {
+        gap: 10px;
+        margin-top: 0px;
+    }
+
+    .banner {
+        height: 110vh;
+    }
+
+    .banner .content__container h1 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        max-width: 95%;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        font-size: 1.525rem !important;
+        color: #fff;
+    }
+
+    .banner .logo {
+        width: 150px;
+        height: 40px;
+        margin-left: 0px;
+    }
+
+    .banner .logo img {
+        width: 134px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form__data {
+        padding-bottom: 20px;
+    }
+
+    .form__item__div{
+        margin-bottom: 25px;
+    }
+
+    button {
+        border: 2px solid gray !important;
+        background: #fff;
+        height: 50px !important;
+        border-radius: 10px !important;
+        padding: 15px 0px;
+    }
+
+    .basic {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width:534px) {
+    .banner .content__container h1 {
+        font-size: 1.2rem !important;
+        width: 95%;
+        color: #fff;
+    }
+
+    .form__link i {
+        display: none;
+    }
+
+
+    
+}

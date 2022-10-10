@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banner</title>
+  <!-- style sheet linking in html  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- bootstrap cdn  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- font awesome cdnjs link   -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+  <section class="banner" style="background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(./assets/img/outstation.jpg) !important ; background-position: center center;">
+    <div class="container">
+      <div class="logo">
+        <img src="./assets/img/logo.png" alt="Logo here">
+      </div>
+      <div class="content__container">
+        <div class="headein">
+          <h1>Outstation made surprisingly easy and enjoyable!</h1>
+        </div>
+      </div>
+      <div class="form">
+        <div class="form__link">
+          <div class="row">
+            <div class="col-4 form__link__item"><a href="./"><i class="fa-solid fa-plane-departure mx-3"></i>
+                Airport</a></div>
+            <div class="col-4 form__link__item"><a href="./railwaystation.html"> <i class="fa-solid fa-train mx-3"></i>
+                Railway Stn</a></div>
+            <div class="col-4 form__link__item"><a href="./outstation.html" class="active"><i
+                  class="fa-solid fa-car mx-3"></i>Outstation</a></div>
+          </div>
+        </div>
+        <div class="form__data">
+          <form action="">
+            <div class="row form__out pt-3">
+              <div class="col-12 ">
+                <label for="pick-up " class="label">Pick-up location</label>
+                <div class="input__box d-flex my-3 align-items-center justify-content-center">
+                  <i class="fa-solid fa-location-arrow"></i>
+                  <input type="search" placeholder="Address" class="form-control shadow-none border-0">
+                </div>
+              </div>
+            </div>
+            <div class="row form__out pt-3">
+              <div class="col-12">
+                <div class="col-12" id="btn__label">
+                  <label class="label__return"><input type="checkbox">Return to a different
+                    location</label>
+                </div>
+                <div class="col-12 hide" id="id">
+                  <label for="pick-up " class="label">Drop location</label>
+                  <div class="input__box d-flex my-3 align-items-center justify-content-center">
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <input type="search" placeholder="Address" class="form-control shadow-none border-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row form__out pt-3">
+              <div class="col-lg-6 col-md-12 basic col-12">
+                <label>Pick-up Date</label>
+                <div class="icon__box d-flex align-items-center">
+                  <div class="imputbox col-8 d-flex align-items-center">
+                    <i class="fa-regular fa-calendar"></i>
+                    <input type="text" placeholder="Start Date" class=" form-control shadow-none border-0">
+                  </div>
+                  <div class="col-4 imputbox">
+                    <input type="time" class="form-control shadow-none border-0">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 basic col-12">
+                <label>Return Date</label>
+                <div class="icon__box d-flex align-items-center">
+                  <div class="imputbox col-8 d-flex align-items-center">
+                    <i class="fa-regular fa-calendar"></i>
+                    <input type="text" placeholder="Return Date" class=" form-control shadow-none border-0">
+                  </div>
+                  <div class="col-4 imputbox">
+                    <input type="time" class="form-control shadow-none border-0">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-4">
+              <div class="col-12 d-flex justify-content-center align-items-center">
+                <div class="col-6">
+                  <input type="submit" class="sub_btn form-control border-0 shadow-none" >
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- script bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script>
+    let div = document.getElementById('id');
+    let btn = document.getElementById('btn__label');
+    btn.addEventListener('click', () => {
+      if (div.style.display === 'block') {
+        div.style.display = 'none';
+      } else {
+        div.style.display = 'block';
+      }
+    })
+  </script>
+</body>
+
+</html>
